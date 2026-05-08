@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fff8ec"/>
+  <rect x="60" y="60" width="1080" height="510" rx="34" fill="#174b35"/>
+  <circle cx="962" cy="150" r="96" fill="#d7ad55" opacity=".24"/>
+  <circle cx="206" cy="492" r="130" fill="#4b7d5a" opacity=".26"/>
+  <path d="M813 161c-114 14-198 86-202 191 84 17 185-20 225-123 10-26 8-49 7-68Z" fill="#d7ad55"/>
+  <path d="M622 356c65-58 123-93 190-132" fill="none" stroke="#fff8ec" stroke-width="18" stroke-linecap="round"/>
+  <text x="110" y="240" font-family="Arial, sans-serif" font-size="70" font-weight="700" fill="#fff8ec">Herbal East Supply</text>
+  <text x="112" y="326" font-family="Arial, sans-serif" font-size="34" fill="#f2d79a">Chinese herbal ingredients wholesale</text>
+  <text x="112" y="386" font-family="Arial, sans-serif" font-size="28" fill="#fff8ec">Bulk shipping · Loose cargo · OEM herbal tea</text>
+</svg>
