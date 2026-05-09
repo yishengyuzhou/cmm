@@ -40,6 +40,14 @@ const imageSources: Record<ImagePromptKey, string> = {
   productLotusSeed: new URL('../assets/products/lotus-seed.jpg', import.meta.url).href,
   productHerbalSleepTea: new URL('../assets/products/herbal-sleep-tea.jpg', import.meta.url).href,
   productWellnessFlowerTea: new URL('../assets/products/wellness-flower-tea.jpg', import.meta.url).href,
+  productDriedLongan: new URL('../assets/products/dried-longan.jpg', import.meta.url).href,
+  productHoneysuckleFlower: new URL('../assets/products/honeysuckle-flower.jpg', import.meta.url).href,
+  productLuoHanGuo: new URL('../assets/products/luo-han-guo.jpg', import.meta.url).href,
+  productMulberryLeaf: new URL('../assets/products/mulberry-leaf.jpg', import.meta.url).href,
+  productCassiaSeed: new URL('../assets/products/cassia-seed.jpg', import.meta.url).href,
+  productRehmanniaRoot: new URL('../assets/products/rehmannia-root.jpg', import.meta.url).href,
+  productAngelicaRoot: new URL('../assets/products/angelica-root.jpg', import.meta.url).href,
+  productWhitePeonyRoot: new URL('../assets/products/white-peony-root.jpg', import.meta.url).href,
 };
 
 const visualKindByKey: Record<ImagePromptKey, 'hero' | 'herbs' | 'tea' | 'packaging' | 'logistics' | 'process' | 'product'> = {
@@ -68,6 +76,14 @@ const visualKindByKey: Record<ImagePromptKey, 'hero' | 'herbs' | 'tea' | 'packag
   productLotusSeed: 'product',
   productHerbalSleepTea: 'product',
   productWellnessFlowerTea: 'product',
+  productDriedLongan: 'product',
+  productHoneysuckleFlower: 'product',
+  productLuoHanGuo: 'product',
+  productMulberryLeaf: 'product',
+  productCassiaSeed: 'product',
+  productRehmanniaRoot: 'product',
+  productAngelicaRoot: 'product',
+  productWhitePeonyRoot: 'product',
 };
 
 const imageSource = computed(() => imageSources[props.imageKey]);

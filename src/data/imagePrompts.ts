@@ -23,7 +23,15 @@ export type ImagePromptKey =
   | 'productLilyBulb'
   | 'productLotusSeed'
   | 'productHerbalSleepTea'
-  | 'productWellnessFlowerTea';
+  | 'productWellnessFlowerTea'
+  | 'productDriedLongan'
+  | 'productHoneysuckleFlower'
+  | 'productLuoHanGuo'
+  | 'productMulberryLeaf'
+  | 'productCassiaSeed'
+  | 'productRehmanniaRoot'
+  | 'productAngelicaRoot'
+  | 'productWhitePeonyRoot';
 
 export const imagePrompts: Record<ImagePromptKey, string> = {
   heroHerbs:
@@ -76,4 +84,20 @@ export const imagePrompts: Record<ImagePromptKey, string> = {
     'Premium commercial product photo of unlabeled herbal sleep tea bags, amber tea cup, dried lily bulb, lotus seed and botanical flowers on a warm beige wooden table, no text, no logo.',
   productWellnessFlowerTea:
     'Premium commercial product photo of colorful wellness flower tea blend with chrysanthemum and petals in a glass cup and ceramic dish, warm beige wooden table, no text, no logo.',
+  productDriedLongan:
+    'Premium commercial product photo of dried longan flesh and whole dried longan pieces in a ceramic bowl on a warm beige wooden table, Southeast Asian wellness catalogue style, no text, no logo.',
+  productHoneysuckleFlower:
+    'Premium commercial product photo of dried honeysuckle flowers for herbal tea, ceramic bowl, warm beige wooden table, natural daylight, green and gold accents, no text, no logo.',
+  productLuoHanGuo:
+    'Premium commercial product photo of dried luo han guo monk fruit, whole and cracked open, arranged in a ceramic dish on a warm beige wooden table, no text, no logo.',
+  productMulberryLeaf:
+    'Premium commercial product photo of dried mulberry leaves for herbal tea, ceramic dish, light herbal tea cup, warm beige wooden table, no text, no logo.',
+  productCassiaSeed:
+    'Premium commercial product photo of glossy brown cassia seeds in a ceramic bowl on a warm beige wooden table, deep green botanical accents, no text, no logo.',
+  productRehmanniaRoot:
+    'Premium commercial product photo of dark dried rehmannia root slices in a ceramic dish on a warm beige wooden table, premium herbal ingredient catalogue, no text, no logo.',
+  productAngelicaRoot:
+    'Premium commercial product photo of dried angelica root slices and root pieces in a shallow ceramic tray on a warm beige wooden table, no text, no logo.',
+  productWhitePeonyRoot:
+    'Premium commercial product photo of pale white peony root slices in a ceramic bowl on a warm beige wooden table, clean botanical ingredient catalogue, no text, no logo.',
 };

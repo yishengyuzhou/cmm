@@ -105,7 +105,7 @@ Original local SVG fallback/supporting illustrations are kept in:
 src/assets/images/
 ```
 
-These images are project-owned assets created for this website, so there are no third-party image copyright risks. They cover the 12 product cards plus hero herbs, raw herbs, herbal tea, wellness drinks, calm tea, gift packs, OEM packaging, bulk shipping, carton packing, mixed batches, sorting process, quality check and contact inquiry scenes.
+These images are project-owned assets created for this website, so there are no third-party image copyright risks. They cover the 20 product cards plus hero herbs, raw herbs, herbal tea, wellness drinks, calm tea, gift packs, OEM packaging, bulk shipping, carton packing, mixed batches, sorting process, quality check and contact inquiry scenes.
 
 To replace them with generated or real owned assets:
 
@@ -163,3 +163,12 @@ The website avoids medical treatment claims. Copy uses safer B2B and lifestyle l
 - merchant supply solution
 
 Avoid adding claims such as cure, disease treatment, guaranteed medical effect, blood pressure reduction or blood sugar reduction.
+
+
+
+
+git add -A
+
+git commit -m "Update showcase images and contact email dialog"
+
+git push -u origin main
