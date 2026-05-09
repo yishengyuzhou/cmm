@@ -1,18 +1,18 @@
 <script setup lang="ts">
-import { EMAIL_CONTACT_PATH, openEmailWindow } from '@/utils/emailWindow';
-
 defineProps<{
   ariaLabel?: string;
 }>();
+
+const openDialog = () => {
+  window.dispatchEvent(new Event('open-contact-email-dialog'));
+};
 </script>
 
 <template>
   <a
-    :href="EMAIL_CONTACT_PATH"
-    target="herbalEastEmailContact"
-    rel="noopener"
+    href="#contact-email"
     :aria-label="ariaLabel"
-    @click.prevent="openEmailWindow"
+    @click.prevent="openDialog"
   >
     <slot />
   </a>

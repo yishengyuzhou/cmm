@@ -77,9 +77,9 @@ watch(
             <span>{{ t('common.emailLabel') }}</span>
             {{ CONTACT_EMAIL }}
           </EmailPopupLink>
-          <RouterLink class="btn btn--primary header-cta" to="/contact">
+          <EmailPopupLink class="btn btn--primary header-cta" :aria-label="t('nav.contactUs')">
             {{ t('nav.contactUs') }}
-          </RouterLink>
+          </EmailPopupLink>
         </div>
       </nav>
     </div>

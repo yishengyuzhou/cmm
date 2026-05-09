@@ -45,9 +45,9 @@ const companyLinks = computed(() => [
       <section>
         <h3>{{ t('footer.sections.contact') }}</h3>
         <p>{{ t('footer.notice') }}</p>
-        <RouterLink class="btn btn--primary" to="/contact">
+        <EmailPopupLink class="btn btn--primary" :aria-label="t('nav.contactUs')">
           {{ t('nav.contactUs') }}
-        </RouterLink>
+        </EmailPopupLink>
       </section>
     </div>
     <div class="container app-footer__bottom">

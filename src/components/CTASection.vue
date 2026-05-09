@@ -22,7 +22,7 @@ const { t } = useI18n();
       </div>
       <div class="button-row">
         <EmailPopupLink class="btn btn--primary" :aria-label="t('common.emailUs')">{{ t('common.emailUs') }}</EmailPopupLink>
-        <RouterLink class="btn btn--secondary" to="/contact">{{ t('nav.contactUs') }}</RouterLink>
+        <EmailPopupLink class="btn btn--secondary" :aria-label="t('nav.contactUs')">{{ t('nav.contactUs') }}</EmailPopupLink>
       </div>
     </div>
   </section>

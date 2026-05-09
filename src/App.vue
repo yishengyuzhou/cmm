@@ -3,6 +3,7 @@ import { computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import AppFooter from '@/components/AppFooter.vue';
 import AppHeader from '@/components/AppHeader.vue';
+import ContactEmailDialog from '@/components/ContactEmailDialog.vue';
 import { useI18n } from '@/i18n';
 
 const route = useRoute();
@@ -36,5 +37,6 @@ watch([() => route.fullPath, locale], updateSeo, { immediate: true });
       <RouterView />
     </main>
     <AppFooter v-if="!isStandalone" />
+    <ContactEmailDialog v-if="!isStandalone" />
   </div>
 </template>

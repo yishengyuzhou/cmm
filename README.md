@@ -46,7 +46,8 @@ src/
   components/          Reusable UI components
   assets/
     products/          AI-generated product catalogue images
-    images/            Local supporting SVG website illustrations
+    showcase/          AI-generated page and category display images
+    images/            Original SVG fallback/supporting illustrations
   data/
     products.ts        Product catalogue data
     imagePrompts.ts    AI image generation prompts for future asset replacement
@@ -92,7 +93,13 @@ Product cards use AI-generated catalogue images in:
 src/assets/products/
 ```
 
-Supporting page visuals use original local SVG assets in:
+Supporting page and category visuals use AI-generated display images in:
+
+```text
+src/assets/showcase/
+```
+
+Original local SVG fallback/supporting illustrations are kept in:
 
 ```text
 src/assets/images/
@@ -103,7 +110,7 @@ These images are project-owned assets created for this website, so there are no 
 To replace them with generated or real owned assets:
 
 1. Use the prompts in `src/data/imagePrompts.ts` to generate consistent visual assets.
-2. Save product images into `src/assets/products/` and supporting images into `src/assets/images/`.
+2. Save product images into `src/assets/products/` and page/category images into `src/assets/showcase/`.
 3. Update the `imageSources` map in `src/components/ResponsiveImageBlock.vue` to reference the new image files.
 
 Keep the same style direction:
@@ -131,19 +138,18 @@ export const CONTACT_EMAIL = 'kang341281k@gmail.com';
 
 All header, footer, CTA, product inquiry and contact page mailto links use this value.
 
-## Email Popup Page
+## Contact Email Dialog
 
-Email-related buttons open a small popup webpage at:
+Email-related buttons open a native browser `<dialog>` modal on the current page. The dialog displays the configured contact email in a large highlighted style, with copy and email-app actions.
 
 ```text
-/email-contact
+src/components/ContactEmailDialog.vue
 ```
 
-The popup displays the configured contact email, plus copy and email-app actions. The shared click behavior lives in:
+The shared click behavior lives in:
 
 ```text
 src/components/EmailPopupLink.vue
-src/utils/emailWindow.ts
 ```
 
 ## Compliance Copy Notes

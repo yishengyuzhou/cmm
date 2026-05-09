@@ -12,7 +12,7 @@ const { t } = useI18n();
       <span>{{ t('common.emailLabel') }}</span>
       <EmailPopupLink :aria-label="t('common.emailLabel')">{{ CONTACT_EMAIL }}</EmailPopupLink>
     </div>
-    <RouterLink class="btn btn--primary" to="/contact">{{ t('nav.contactUs') }}</RouterLink>
+    <EmailPopupLink class="btn btn--primary" :aria-label="t('nav.contactUs')">{{ t('nav.contactUs') }}</EmailPopupLink>
   </aside>
 </template>
 

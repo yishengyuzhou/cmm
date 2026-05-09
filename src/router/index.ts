@@ -5,7 +5,6 @@ import BulkSupplyView from '@/pages/BulkSupplyView.vue';
 import OemOdmView from '@/pages/OemOdmView.vue';
 import AboutView from '@/pages/AboutView.vue';
 import ContactView from '@/pages/ContactView.vue';
-import EmailContactView from '@/pages/EmailContactView.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -62,16 +61,6 @@ const router = createRouter({
       meta: {
         titleKey: 'seo.contactTitle',
         descriptionKey: 'seo.contactDescription',
-      },
-    },
-    {
-      path: '/email-contact',
-      name: 'email-contact',
-      component: EmailContactView,
-      meta: {
-        titleKey: 'emailPage.seoTitle',
-        descriptionKey: 'emailPage.seoDescription',
-        standalone: true,
       },
     },
   ],
